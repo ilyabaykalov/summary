@@ -350,7 +350,7 @@ hr {
 .section--sub-heading {
 	display: block;
 	padding: 0;
-	margin: 0;
+	margin: 5px 0;
 	color: #a43d46;
 	font-size: 13px;
 }
