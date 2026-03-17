@@ -97,6 +97,10 @@ hr {
     margin-bottom: 10px;
 }
 
+.section--spaced {
+    margin-top: 30px;
+}
+
 .section--title {
     display: inline-block;
     position: relative;
@@ -108,6 +112,24 @@ hr {
     padding: 19px 0 10px 10px;
     border-top: 1px solid #d2d2d2;
     page-break-inside: avoid;
+}
+
+.section--title--no-border {
+    border-top: none;
+}
+
+.section--title--with-meta {
+    padding-bottom: 8px;
+}
+
+.section--meta {
+    margin: 8px 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    color: #4c4c4c;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .section--title span {
@@ -293,6 +315,10 @@ hr {
     margin: 0;
 }
 
+.section--item--spaced {
+    margin-top: 30px;
+}
+
 .section--item.skills {
     display: inline-block;
     padding-top: 5px;
@@ -364,6 +390,56 @@ hr {
 
 .section--content p {
     display: block;
+}
+
+.summary-list {
+    margin: 0;
+    padding-left: 16px;
+}
+
+.summary-list li {
+    margin: 0 0 6px 0;
+}
+
+.summary-list li:last-child {
+    margin-bottom: 0;
+}
+
+.project {
+    padding: 8px 0;
+}
+
+.project + .project {
+    border-top: 1px solid #d2d2d2;
+    margin-top: 10px;
+    padding-top: 12px;
+}
+
+.project--head {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 6px 10px;
+}
+
+.project--head .badge {
+    margin: 0;
+}
+
+.project--title {
+    margin: 0;
+    font-weight: bold;
+}
+
+.project--label {
+    margin: 6px 0 4px 0;
+    font-weight: 600;
+}
+
+.project--list {
+    margin: 0;
+    padding-left: 16px;
 }
 
 .badge {
@@ -445,6 +521,7 @@ hr {
     height: 155px;
     width: 155px;
     border-radius: 50%;
+    background: url("profile_photo/photo.png") no-repeat center;
     background-size: cover !important;
     border: 2px solid #fff;
 }
@@ -518,11 +595,11 @@ hr {
 
 .sidebar--item.sidebar--item-personal {
     padding: 0 5px 5px 23px;
+}
 
-    a {
-        color: white;
-        text-decoration: none;
-    }
+.sidebar--item.sidebar--item-personal a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .sidebar--item:last-child {
