@@ -4,6 +4,7 @@
     <head>
         <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
         <meta name='format-detection' content='telephone=no'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel='stylesheet' href='style.css'>
 
         <title>Резюме Байкалов И.С.</title>
@@ -14,7 +15,7 @@
         <!-- Секция краткой информации и контактных данных -->
         <aside class='sidebar'>
             <div class='avatar--bg'></div>
-            <div class='avatar' style='background:url("profile_photo/photo.png") no-repeat center;'></div>
+            <div class='avatar'></div>
 
             <div class='sidebar--data'>
                 <h2 class='sidebar--title'>
@@ -193,7 +194,7 @@
         </aside>
 
         <!-- Главная секция -->
-        <section class='sections'>
+        <main class='sections'>
         <div class='section--name'>
             <h1>
                 Байкалов Илья
@@ -215,15 +216,18 @@
             </div>
 
             <div class='section--content section--content-single-textarea'>
-                <p>
-                    Ответственный и исполнительный специалист, всегда стараюсь довести дело до конца.
-                    Обладаю аналитическим складом ума и стремлюсь глубоко разбираться в каждой задаче, находя оптимальные решения даже в сложных ситуациях.
-                    Пунктуальность и организованность помогают мне эффективно планировать работу, а коммуникабельность — выстраивать продуктивные взаимодействия в команде.
-
-                    Умею работать как самостоятельно, так и в коллективе, адаптируясь к различным условиям и задачам.
-                    Внимателен к деталям, дотошен в изучении вопросов, что позволяет находить нестандартные пути решения проблем.
-                    Нацелен на результат и всегда стараюсь добиться максимального качества в работе.
-                </p>
+                <ul class='summary-list'>
+                    <li>Старший инженер-программист с опытом разработки корпоративных систем и высоконагруженных сервисов (Java, Spring, JavaScript, ReactJS, NodeJS), включая системы электронного документооборота и интеграционные решения.</li>
+                    <li>Опыт роли Team Lead: проектирование архитектуры (микросервисы, модульные системы), декомпозиция задач, управление разработкой, code review, контроль качества и сроков.</li>
+                    <li>Глубокая экспертиза в интеграциях: REST/SOAP API, очереди сообщений, взаимодействие с внешними и внутренними системами, обеспечение отказоустойчивости и консистентности данных.</li>
+                    <li>Опыт проектирования и оптимизации хранения данных: реляционные БД, сложные SQL-запросы, оптимизация производительности, работа с большими объемами данных.</li>
+                    <li>Разработка бизнес-логики, модулей обработки данных и генерации отчетности, участие в построении доменной модели и бизнес-процессов.</li>
+                    <li>Опыт миграции данных и внедрения систем: анализ источников, трансформация данных, контроль корректности и полноты переноса.</li>
+                    <li>Разработка пользовательских интерфейсов и API, участие в проектировании UX/UI и взаимодействии frontend/backend.</li>
+                    <li>Понимание полного цикла разработки: от сбора и формализации требований до внедрения, сопровождения и оптимизации.</li>
+                    <li>Опыт работы в Agile-командах, взаимодействие с заказчиками и смежными командами (аналитика, тестирование, DevOps).</li>
+                    <li>Быстрая адаптация к новым доменам и технологиям, ориентация на результат и инженерное качество решений.</li>
+                </ul>
             </div>
         </div>
 
@@ -291,12 +295,10 @@
                         <p>Диплом бакалавра с отличием</p>
                     </div>
                 </li>
-
             </ol>
         </div>
 
         <div class='section'>
-
             <div class='section--title'>
                 <h2>
                     <i class='section--title-icon course'>
@@ -398,9 +400,8 @@
             </ol>
         </div>
 
-        <div class='section'>
-
-            <div class='section--title'>
+        <div class='section section--spaced'>
+            <div class='section--title section--title--no-border'>
                 <h2>
                     <i class='section--title-icon skill'>
                         <svg fill='#000000' height='24' viewBox='0 0 24 24' width='24'
@@ -761,7 +762,7 @@
 					mainExperienceElement.textContent = `По трудовой книжке: ${calculateExperience(mainStartDate)}`;
 				}
 
-		        const generalStartDate = "2017-03-15";
+		        const generalStartDate = "2017-03-02";
 		        const generalExperienceElement = document.getElementById("general-experience");
 
 		        if (generalExperienceElement) {
@@ -770,212 +771,185 @@
 	        });
         </script>
 
-        <div class='section' style='page-break-before:always;'>
-
-            <div class='section--title' style='border:none;'>
-                <h2>
-                    <i class='section--title-icon work'>
-                        <svg fill='#000000' height='24' viewBox='0 0 24 24' width='24'
-                             xmlns='http://www.w3.org/2000/svg'>
-                            <path d='M0 0h24v24H0zm10 5h4v2h-4zm0 0h4v2h-4z' fill='none'></path>
-                            <path d='M10 16v-1H3.01L3 19c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2v-4h-7v1h-4zm10-9h-4.01V5l-2-2h-4l-2 2v2H4c-1.1 0-2 .9-2 2v3c0 1.11.89 2 2 2h6v-2h4v2h6c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-6 0h-4V5h4v2z'></path>
-                        </svg>
-                    </i>
-                    <span>Опыт работы</span>
-                </h2>
-                <div style="margin: 10px 30px; display: flex; flex-direction: column; row-gap: 5px">
-                    <div id="main-experience">Опыт работы</div>
-                    <div id="general-experience">Опыт работы</div>
+        <div class='section'>
+                <div class='section--title section--title--no-border section--title--with-meta'>
+                    <h2>
+                        <i class='section--title-icon work'>
+                            <svg fill='#000000' height='24' viewBox='0 0 24 24' width='24'
+                                 xmlns='http://www.w3.org/2000/svg'>
+                                <path d='M0 0h24v24H0zm10 5h4v2h-4zm0 0h4v2h-4z' fill='none'></path>
+                                <path d='M10 16v-1H3.01L3 19c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2v-4h-7v1h-4zm10-9h-4.01V5l-2-2h-4l-2 2v2H4c-1.1 0-2 .9-2 2v3c0 1.11.89 2 2 2h6v-2h4v2h6c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-6 0h-4V5h4v2z'></path>
+                            </svg>
+                        </i>
+                        <span>Опыт работы</span>
+                    </h2>
+                    <div class="section--meta experience-summary">
+                        <span id="main-experience">Опыт работы</span>
+                        <span id="general-experience">Опыт работы</span>
+                    </div>
                 </div>
+
+                <div class='section--time-line-overlay'></div>
+
+                <ol class='section--list'>
+
+                    <!-- Senior -->
+                    <li class='section--item'>
+                        <div class='section--heading-group'>
+                            <div class='section--date'>дек 2023 — наст. время</div>
+                            <div class='section--heading'><h3>Старший инженер-программист</h3></div>
+                            <div class='section--sub-heading'>ООО "Логика Бизнеса"</div>
+                            <div class='section--sub-heading'>г. Москва</div>
+                        </div>
+
+                        <div class='section--content'>
+
+                            <div class="project">
+                                <div class="project--head">
+                                    <span class="badge">Team lead</span>
+                                    <p class="project--title">АО "НПФ Сбербанка"</p>
+                                </div>
+                                <ul class="project--list">
+                                    <li>проектирование и развитие архитектуры системы (микросервисная архитектура, интеграционные контуры)</li>
+                                    <li>декомпозиция требований и постановка задач команде разработки</li>
+                                    <li>организация и контроль разработки (code review, архитектурный контроль)</li>
+                                    <li>проектирование и реализация интеграций (REST, SOAP, очереди сообщений)</li>
+                                    <li>миграция данных и оптимизация процессов переноса (ETL, валидация, консистентность)</li>
+                                    <li>оптимизация производительности (запросы, кэширование, обработка больших данных)</li>
+                                    <li>взаимодействие с заказчиком, уточнение и формализация требований</li>
+                                </ul>
+                            </div>
+
+                            <div class="project">
+                                <div class="project--head">
+                                    <span class="badge">Team lead</span>
+                                    <p class="project--title">Евразийский банк развития</p>
+                                </div>
+                                <ul class="project--list">
+                                    <li>разработка архитектурных решений с учетом требований отказоустойчивости и масштабируемости</li>
+                                    <li>проектирование и реализация интеграций с внешними банковскими системами</li>
+                                    <li>организация CI/CD процессов, участие в настройке пайплайнов</li>
+                                    <li>контроль качества кода и соблюдения стандартов разработки</li>
+                                    <li>анализ и оптимизация бизнес-процессов документооборота</li>
+                                </ul>
+                            </div>
+
+                            <div class="project">
+                                <p class="project--title">Haleon</p>
+                                <ul class="project--list">
+                                    <li>разработка модуля машиночитаемых доверенностей (МЧД) с учетом требований законодательства</li>
+                                    <li>реализация механизмов жизненного цикла МЧД (создание, отзыв, аудит)</li>
+                                    <li>проектирование API и интеграция с внешними сервисами</li>
+                                    <li>обеспечение безопасности и валидации данных</li>
+                                </ul>
+                            </div>
+
+                            <div class="project">
+                                <p class="project--title">АО "Ванкорнефть"</p>
+                                <ul class="project--list">
+                                    <li>разработка и развитие функциональности корпоративной системы документооборота</li>
+                                    <li>проектирование универсального пакета обработки документов</li>
+                                    <li>разработка генератора отчетности (формирование, агрегация, экспорт)</li>
+                                    <li>оптимизация SQL-запросов и работы с БД</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <!-- Middle -->
+                    <li class='section--item section--item--spaced'>
+                        <div class='section--heading-group'>
+                            <div class='section--date'>апр 2021 — дек 2023</div>
+                            <div class='section--heading'><h3>Инженер-программист</h3></div>
+                            <div class='section--sub-heading'>ООО "Логика Бизнеса"</div>
+                            <div class='section--sub-heading'>г. Москва</div>
+                        </div>
+
+                        <div class='section--content'>
+                            <div class="project">
+                                <p class="project--title">ПАО "Транснефть"</p>
+                                <ul class="project--list">
+                                    <li>проектирование бизнес-логики электронного документооборота</li>
+                                    <li>разработка backend-логики (Java, Spring)</li>
+                                    <li>разработка пользовательских интерфейсов (web UI)</li>
+                                    <li>проектирование структуры данных и взаимодействия с БД</li>
+                                    <li>участие в интеграции с внутренними системами</li>
+                                    <li>исправление дефектов и технический рефакторинг</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Junior -->
+                    <li class='section--item'>
+                        <div class='section--heading-group'>
+                            <div class='section--date'>сен 2019 — апр 2021</div>
+                            <div class='section--heading'><h3>Младший инженер-программист</h3></div>
+                            <div class='section--sub-heading'>ООО "Логика Бизнеса"</div>
+                            <div class='section--sub-heading'>г. Москва</div>
+                        </div>
+
+                        <div class='section--content'>
+                            <div class="project">
+                                <p class="project--title">ПАО "Транснефть"</p>
+                                <ul class="project--list">
+                                    <li>разработка и доработка функциональности существующих модулей</li>
+                                    <li>участие в разработке backend-логики</li>
+                                    <li>исправление багов и поддержка системы</li>
+                                    <li>написание SQL-запросов и работа с БД</li>
+                                    <li>участие в код-ревью и командной разработке</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Android -->
+                    <li class='section--item'>
+                        <div class='section--heading-group'>
+                            <div class='section--date'>сен 2019 — мар 2020</div>
+                            <div class='section--heading'><h3>Android-разработчик</h3></div>
+                            <div class='section--sub-heading'>OptWeaR</div>
+                            <div class='section--sub-heading'>г. Красноярск</div>
+                        </div>
+
+                        <div class='section--content'>
+                            <div class="project">
+                                <ul class="project--list">
+                                    <li>разработка мобильного приложения (Android, Kotlin/Java)</li>
+                                    <li>проектирование UX/UI и пользовательских сценариев</li>
+                                    <li>реализация взаимодействия с backend API</li>
+                                    <li>разработка бизнес-логики приложения</li>
+                                    <li>оптимизация производительности и устранение ошибок</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- University -->
+                    <li class='section--item'>
+                        <div class='section--heading-group'>
+                            <div class='section--date'>мар 2017 — дек 2018</div>
+                            <div class='section--heading'><h3>Java EE разработчик</h3></div>
+                            <div class='section--sub-heading'>СФУ</div>
+                            <div class='section--sub-heading'>г. Красноярск</div>
+                        </div>
+
+                        <div class='section--content'>
+                            <div class="project">
+                                <ul class="project--list">
+                                    <li>разработка корпоративной информационной системы</li>
+                                    <li>реализация backend-логики (Java EE)</li>
+                                    <li>разработка пользовательских интерфейсов</li>
+                                    <li>работа с БД и написание SQL-запросов</li>
+                                    <li>поддержка и развитие существующего функционала</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                </ol>
             </div>
-
-            <div class='section--time-line-overlay'></div>
-
-            <ol class='section--list'>
-                <li class='section--item'>
-                    <div class='section--time-line'>
-                        <svg class='section--time-line-dot'>
-                            <circle cx='4' cy='4' r='3' stroke='black' stroke-width='1' fill='white'></circle>
-                        </svg>
-                    </div>
-                    <div class='section--time-line-hide-overlay'></div>
-                    <div class='section--heading-group'>
-                        <div class='section--date'>
-                            дек 2023 — наст. время
-                        </div>
-                        <div class='section--heading'>
-                            <h3>Старший инженер-программист</h3>
-                        </div>
-                        <div class='section--sub-heading'>
-                            ООО "Логика Бизнеса"
-                            <div>г. Москва</div>
-                        </div>
-                    </div>
-                    <div class='section--content'>
-                        <div class='section--content'>
-                            <div class="badge">Team lead</div>
-                            <p>Корпоративная система внутреннего электронного документооборота, <b>АО "НПФ Сбербанка"</b></p>
-                            <p><br></p>
-                            <p>Обязанности:</p>
-                            <ul>
-                                <li>проектирование архитектуры системы</li>
-                                <li>миграция данных из прежней системы</li>
-                                <li>интеграция со сторонними системами</li>
-                                <li>реализация требований заказчика</li>
-                            </ul>
-                            <p><br></p>
-                            <hr>
-                            <p><br></p>
-                            <div class="badge">Team lead</div>
-                            <p>Корпоративная система внутреннего электронного документооборота, <b>"Евразийский банк развития"</b></p>
-                            <p><br></p>
-                            <p>Обязанности:</p>
-                            <ul>
-                                <li>проектирование архитектуры системы</li>
-                                <li>интеграция со сторонними системами</li>
-                                <li>реализация требований заказчика</li>
-                            </ul>
-                            <p><br></p>
-                            <hr>
-                            <p><br></p>
-                            <p>Внутренняя система учета оборудования и создания машиночитаемых доверенностей, <b>"Haleon"</b></p>
-                            <p><br></p>
-                            <p>Обязанности:</p>
-                            <ul>
-                                <li>разработка модуля создания МЧД</li>
-                                <li>разработка модуля отмены действия МЧД</li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-
-                <li class='section--item'>
-                    <div class='section--time-line'>
-                        <svg class='section--time-line-dot'>
-                            <circle cx='4' cy='4' r='3' stroke='black' stroke-width='1' fill='white'></circle>
-                        </svg>
-                    </div>
-                    <div class='section--time-line-hide-overlay'></div>
-                    <div class='section--heading-group'>
-                        <div class='section--date'>
-                            апр 2021 — дек 2023
-                        </div>
-                        <div class='section--heading'>
-                            <h3>Инженер-программист</h3>
-                        </div>
-                        <div class='section--sub-heading'>
-                            ООО "Логика Бизнеса"
-                            <div>г. Москва</div>
-                        </div>
-                    </div>
-                    <div class='section--content'>
-                        <div class='section--content'>
-                            <p>Корпоративная информационная система электронного хранения документов (КИС ЭХД), <b>ПАО
-                                "Транснефть"</b></p>
-                            <p><br></p>
-                            <p>Обязанности:</p>
-                            <ul>
-                                <li>проектирование логики внутреннего электронного документооборота</li>
-                                <li>проектирование и реализация графического пользовательского интерфейса</li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-
-                <li class='section--item'>
-                    <div class='section--time-line'>
-                        <svg class='section--time-line-dot'>
-                            <circle cx='4' cy='4' r='3' stroke='black' stroke-width='1' fill='white'></circle>
-                        </svg>
-                    </div>
-                    <div class='section--time-line-hide-overlay'></div>
-                    <div class='section--heading-group'>
-                        <div class='section--date'>
-                            сен 2019 — апр 2021
-                        </div>
-                        <div class='section--heading'>
-                            <h3>Младший инженер-программист</h3>
-                        </div>
-                        <div class='section--sub-heading'>
-                            ООО "Логика Бизнеса"
-                            <div>г. Москва</div>
-                        </div>
-                    </div>
-                    <div class='section--content'>
-                        <p>Электронный архив документов медиа архива департамента общественных коммуникаций (ЭАД МАДОК), <b>ПАО
-                            "Транснефть"</b></p>
-                        <p><br></p>
-                        <p>Обязанности:</p>
-                        <ul>
-                            <li>разработка дополнительного функционала для существующих модулей</li>
-                        </ul>
-                    </div>
-                </li>
-
-                <li class='section--item'>
-                    <div class='section--time-line'>
-                        <svg class='section--time-line-dot'>
-                            <circle cx='4' cy='4' r='3' stroke='black' stroke-width='1' fill='white'></circle>
-                        </svg>
-                    </div>
-                    <div class='section--time-line-hide-overlay'></div>
-                    <div class='section--heading-group'>
-                        <div class='section--date'>
-                            сен 2019 — мар 2020
-                        </div>
-                        <div class='section--heading'>
-                            <h3>Android-разработчик</h3>
-                        </div>
-                        <div class='section--sub-heading'>
-                            "OptWeaR - Совместные Покупки"
-                            <div>г. Красноярск</div>
-                        </div>
-                    </div>
-                    <div class='section--content'>
-                        <p>Разработка мобильного клиента для интернет-магазина, <b>"OptWeaR - Совместные Покупки"</b></p>
-                        <p><br></p>
-                        <p>Обязанности:</p>
-                        <ul>
-                            <li>проектирование UX/UI макетов</li>
-                            <li>разработка API для связи клиента с сервером</li>
-                            <li>разработка графического интерфейса пользователя</li>
-                            <li>разработка логики приложения</li>
-                        </ul>
-                    </div>
-                </li>
-
-                <li class='section--item'>
-                    <div class='section--time-line'>
-                        <svg class='section--time-line-dot'>
-                            <circle cx='4' cy='4' r='3' stroke='black' stroke-width='1' fill='white'></circle>
-                        </svg>
-                    </div>
-                    <div class='section--time-line-hide-overlay'></div>
-                    <div class='section--heading-group'>
-                        <div class='section--date'>
-                            мар 2017 — дек 2018
-                        </div>
-                        <div class='section--heading'>
-                            <h3>Java EE разработчик</h3>
-                        </div>
-                        <div class='section--sub-heading'>
-                            Сибирский федеральный университет, Институт космических и информационных технологий
-                            <div>г. Красноярск</div>
-                        </div>
-                    </div>
-                    <div class='section--content'>
-                        <p>Автоматизированная информационная система "Деканат" (АИС "Деканат"), <b>Сибирский Федеральный
-                            Университет</b></p>
-                        <p><br></p>
-                        <p>Обязанности:</p>
-                        <ul>
-                            <li>разработка графического интерфейса пользователя</li>
-                            <li>разработка логики приложения</li>
-                        </ul>
-                    </div>
-                </li>
-            </ol>
-        </div>
-    </section>
+        </main>
     </body>
 </html>
